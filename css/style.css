@@ -186,16 +186,16 @@ html, body {
 
 body {
   font-size: 10px;
-  background: url("../rotofugi2.jpg") no-repeat fixed top left;
+  background: url("../rotofugi4.jpg") no-repeat fixed top left;
   background-size: cover;
 }
 
 #article {
   position: relative;
   left: 0;
-  width: 680px;
-  margin: 0 100px;
-  padding: 100px 0 80px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 130px 0 80px;
 }
 
 #header {
@@ -214,15 +214,15 @@ h1 {
 }
 
 p, a {
-  font-family: "times new roman", Georgia, sans-serif;
+  font-family: "futura", Georgia, sans-serif;
   font-weight: 300;
 }
 
 p {
   margin: 0 0 1em;
   font-style: normal;
-  font-size: 3em;
-  line-height: 1.2em;
+  font-size: 2.3em;
+  line-height: 1.5em;
   color: white;
   z-index: 2;
 }
