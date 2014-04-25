@@ -186,15 +186,16 @@ html, body {
 
 body {
   font-size: 10px;
-  background: url("../rotofugi5bw.jpg") no-repeat fixed top left;
+  background: url("../rotofugi2.jpg") no-repeat fixed top left;
   background-size: cover;
 }
 
 #article {
   position: relative;
+  left: 0;
   width: 600px;
-  margin: 0 auto;
-  padding: 130px 0 80px;
+  margin: 0 100px;
+  padding: 90px 0 80px;
 }
 
 #header {
