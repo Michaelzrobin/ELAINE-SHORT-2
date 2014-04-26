@@ -56,18 +56,27 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
 [class*=" ss-"].right:before{display:none;content:'';}
 
 .ss-facebook:before,.ss-facebook.right:after{content:''}.ss-twitter:before,.ss-twitter.right:after{content:''}.ss-linkedin:before,.ss-linkedin.right:after{content:''}.ss-googleplus:before,.ss-googleplus.right:after{content:''}.ss-tumblr:before,.ss-tumblr.right:after{content:''}.ss-wordpress:before,.ss-wordpress.right:after{content:''}.ss-blogger:before,.ss-blogger.right:after{content:''}.ss-posterous:before,.ss-posterous.right:after{content:''}.ss-youtube:before,.ss-youtube.right:after{content:''}.ss-vimeo:before,.ss-vimeo.right:after{content:''}.ss-flickr:before,.ss-flickr.right:after{content:''}.ss-instagram:before,.ss-instagram.right:after{content:''}.ss-pinterest:before,.ss-pinterest.right:after{content:''}.ss-svpply:before,.ss-svpply.right:after{content:''}.ss-readmill:before,.ss-readmill.right:after{content:''}.ss-dropbox:before,.ss-dropbox.right:after{content:''}.ss-dribbble:before,.ss-dribbble.right:after{content:''}.ss-behance:before,.ss-behance.right:after{content:''}.ss-github:before,.ss-github.right:after{content:''}.ss-octocat:before,.ss-octocat.right:after{content:''}.ss-stackoverflow:before,.ss-stackoverflow.right:after{content:''}.ss-paypal:before,.ss-paypal.right:after{content:''}.ss-kickstarter:before,.ss-kickstarter.right:after{content:''}.ss-foursquare:before,.ss-foursquare.right:after{content:''}.ss-skype:before,.ss-skype.right:after{content:''}.ss-rdio:before,.ss-rdio.right:after{content:''}.ss-spotify:before,.ss-spotify.right:after{content:''}.ss-lastfm:before,.ss-lastfm.right:after{content:''}.ss-mail:before,.ss-mail.right:after{content:'✉'}.ss-like:before,.ss-like.right:after{content:'👍'}.ss-rss:before,.ss-rss.right:after{content:''}
+html{
+  background: url('../rotofugi4.jpg') no-repeat fixed top left;
+  background-size: cover; 
+  font-size: 11.9px; 
+             // 11px
 
+
+}
 html, body {
+  position: relative;
 	width: 100%;
-	margin: 0; padding: 0;
-
+	margin: 0;
+  padding: 0;
 }
 
 body { 
-  // height: 100%;
-  font-size: 10px; 
-  background: url('../rotofugi4.jpg') no-repeat fixed top left;
-  background-size: cover; 
+  height: 100%;
+  // box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+// -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,0.1);
+// -moz-box-shadow: inset 0 0 100px rgba(0,0,0,0.2);
+
 }
 
 #article {
@@ -76,20 +85,21 @@ body {
 	width: 600px;
 	margin: 0 100px;
   padding: 90px 0 80px;
+  font-size: 2.3rem;
+  br{                 //comment out if root font-size is 11px
+    display: none;    
+  }
 }
 #header {
-	margin-bottom: 30px;
-}
-
-h1{
-	color: white;
+	// margin-bottom: 30px;
 }
 
 h1 {
-	margin: 0;
+  color: white;
+	margin: 0 0 3rem 0;
 	font-family: "nevis", serif;
-	font-size: 7.5em;
 	font-weight: 400;
+  font-size: 3.26em;
 	// font-style: italic;
 }
 
@@ -98,10 +108,9 @@ p, a {
 	font-weight: 300;
 }
 p {
-	margin: 0 0 1em;
+	margin: 0 0 2.3rem;
 	font-style: normal;
-	font-size: 2.3em;
-	line-height: 1.5em;
+	line-height: 1.53em;
 	color: white;
   z-index:2;
 }
@@ -126,4 +135,57 @@ b {
   right: -400px;
 	background: url(../elaine.png) no-repeat 0 0;
   background-size: 50%;
+}
+@media all and (max-width: 1050px) {
+  #article{
+  width: 500px;
+  margin: 0 75px;
+  padding: 80px 0 80px;
+  }
+  br{
+    display: none;
+  }
+  html{
+    font-size: 9.5px;
+  }
+}
+@media all and (max-width: 720px) {
+  #article{
+  width: 65%;
+  margin: 0 auto;
+  padding: 80px 0 80px;
+  text-align: justify;
+  }
+  h1{
+    font-size: 3em;
+  }
+  br{
+    display: none;
+  }
+  html{
+    font-size: 8px;
+  }
+  body{
+    transition: 200ms;
+  background-color: rgba(0,0,0,.3)
+  }
+}
+
+@media all and (max-width: 487px) {
+  html{
+    font-size: 6.5px;
+  }
+  #article{
+  padding: 60px 0 80px;
+  }
+  h1{
+    font-size: 2.3em;
+  }
+  }
+
+@media all and (max-width: 330px) {
+ 
+ html{
+  font-size: 5.9px;
+ }
 }
