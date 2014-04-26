@@ -307,4 +307,8 @@ b {
   html {
     font-size: 5.9px;
   }
+
+  #article {
+    width: 75%;
+  }
 }
